@@ -1,0 +1,279 @@
+*{
+  box-sizing: border-box;
+  font-family: 'BrandonGrotesque-Regular', sans-serif;
+
+}
+.topnav {
+
+  /* border: 3px solid black; */
+  height: 150px;
+  margin: 20px;
+}
+
+.homebutton {
+  text-align: center;
+}
+.brand {
+  /* text-align: center; */
+  /* list-style: none; */
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 20px;
+}
+
+.hamburger-container {
+  display: grid;
+  justify-content: flex-start;
+}
+
+.hamburger {
+  all: unset;
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: relative;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+.hamburger-line-top,
+.hamburger-line-middle-back,
+.hamburger-line-middle-front,
+.hamburger-line-bottom {
+  content: "";
+  width: 2.5rem;
+  height: 0.2rem;
+  position: absolute;
+  background-color: black;
+  opacity: 1;
+}
+
+.hamburger-line-top {
+  top: 0;
+}
+
+.hamburger-line-middle-front,
+.hamburger-line-middle-back {
+  top: calc(0.5rem * 2);
+  transition: transform 150ms linear;
+}
+
+.hamburger-line-bottom {
+  top: calc(0.5rem * 4);
+}
+
+.hamburger-expanded .menu-line-top,
+.hamburger-expanded .menu-line-bottom {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.hamburger-expanded .hamburger-line-middle-front {
+  transform: rotate(45deg);
+}
+
+.hamburger-expanded .hamburger-line-middle-back {
+  transform: rotate(-45deg);
+}
+
+/* .hamburger-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 35rem;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  /* transform: translateX(-28.5rem); */
+  /* left: 0; */
+  /* left: -28.5rem;
+  transition: left 150ms ease;
+}
+
+.hamburger-container-expanded {
+  left: 0;
+}  */
+
+
+.dropdown-menu nav {
+  display: none;
+}
+.top-menu {
+  display: none;
+  /* padding: 10px;
+}
+.top-menu .bottom-menu a:hover {
+  color: LightPink;
+}
+
+.top-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* is it necessary have nav ul li */
+/* .top-menu li a {
+  float: left;
+  display: none;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  /* text-align: center; */
+  /* padding: 14px 16px; */
+}
+/* #hamburger {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+} */
+
+.banner {
+/* border: 3px solid black; */
+height: 400px;
+margin: 30px;
+left:0;
+right:0;
+}
+
+.banner-image {
+  object-fit: cover;
+  height: 100%;
+  weight: 100%;
+}
+.hero-container {
+  display: block;
+  margin: 30px;
+}
+.hero {
+  /* border: 3px solid black; */
+  /* height: 400px;
+  width: 450px;
+  margin: 5px; */
+}
+
+.images {
+  /* border : 2px solid black; */
+  height: 300px;
+  width: 500px;
+  /* how to center the 2nd div (contain image) */
+/* is margin necessary? */
+  margin: 0 auto;
+}
+
+/* .pikachu { */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 20px 0 15px;
+  text-transform: capitalize;
+}
+
+.bottomnav {
+  /* border: 3px solid black; */
+  height: 150px;
+  margin: 10px;
+
+}
+.bottom-menu {
+  display: inline;
+  padding: 20px;
+}
+
+.bottom-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-menu li a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+/* .bottom-menu ul li a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* float: right; */
+  /* display: inline;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;  */
+  /* text-align: center; */
+}
+.bottom-menu a:hover{
+  color: LightPink;
+}
+
+@media screen and (min-width: 750px){
+
+/* .topnav {
+  display: block;
+} */
+.hamburger-container {
+  display: none;
+}
+.top-menu {
+  display: inline;
+  padding: 10px;
+}
+.top-menu a:hover {
+  color: LightPink;
+}
+
+/* .top-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; */
+}
+/* is it necessary have nav ul li */
+/* .top-menu li a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  /* text-align: center; */
+  /* padding: 14px 16px; */
+/* } */
+
+.top-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu li a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  /* text-align: center; */
+  /* padding: 14px 16px; */
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px;
+}
